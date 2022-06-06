@@ -1,0 +1,95 @@
+.home {
+    display: grid;
+    grid-template-columns: repeat(32, 1fr);
+    grid-template-rows: repeat(32, 1fr);
+    padding: 0px 25px 0px 25px;
+}
+
+.user_info {
+    grid-column: 1 / 33;
+    grid-row: 1 / 3;
+    border: 2px solid black;
+    display: grid;
+    grid-template-columns: 4fr 4fr 4fr 4fr 1fr 1fr 1fr;
+    align-items: center;
+    justify-content: center;
+}
+
+.user_info h2 {
+    font-size: 1.1em;
+    text-align: right;
+    
+}
+
+.user_info h1 {
+    font-size: 1.1em;
+    text-align: center;
+}
+
+.user_info input[type=button] {
+    padding: 10px;
+    background: none;
+    border: none;
+    font-size: 1.2em;
+    transition: all 1s ease-in-out;
+}
+
+.user_info input[type=button]:hover {
+    cursor: pointer;
+    border: 1px solid black;
+    text-decoration: underline;
+    background-color: red;
+    color: white;
+}
+
+.search_bar {
+    grid-column: 1 / 33;
+    grid-row: 3 / 5;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+
+.search_bar input[type=text] {
+    padding: 5px;
+    font-size: 1.2em;
+    background: none;
+    border: none;
+    border-bottom: 1px solid black;
+}
+
+.search_bar input[type=button] {
+    padding: 5px;
+    font-size: 1.2em;
+    background: none;
+    border: none;
+    transition: all 1s ease-in;
+}
+
+.search_bar input[type=button]:hover {
+    cursor: pointer;
+    border: 1px solid blue;
+    text-decoration: underline;
+    font-weight: bolder;
+    font-style: italic;
+}
+
+
+.book_shelf {
+    grid-column: 1 / 33;
+    grid-row: 5 / 30;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+}
+
+
+.footer {
+    background-color: black;
+    color: red;
+    text-align: center;
+    grid-column: 1 / 33;
+    grid-row: 30 / 33;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}

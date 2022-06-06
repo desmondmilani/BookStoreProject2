@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="Styles/home.css" />
+    <link rel="stylesheet" href="Styles/cart.css" />
+    <link rel="stylesheet" href="Styles/modal.css" />
+    <link rel="stylesheet" href="Styles/book.css" />
+    <title>GG Book Store</title>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="container register" id="register">
+            <div class="left">
+                <div class="mySlides">
+                    <img class="slides" src="./Images/Books/dead.jpg">
+                    <img class="slides" src="./Images/Books/agnes.jpg">
+                    <img class="slides" src="./Images/Books/man.jpg">
+                </div>
+            </div>
+            <div class="right">
+                <form action="" class="form">
+                    <h1>Register</h1>
+                    <div class="input_item">
+                        <label for="fullname">Fullname:</label>
+                        <input type="text" placeholder="Fullname" id="fullname" />
+                    </div>
+
+                    <div class="input_item">
+                        <label for="email">Email:</label>
+                        <input type="email" placeholder="Email" id="email" />
+                    </div>
+
+                    <div class="input_item">
+                        <label for="phone">Phone:</label>
+                        <input type="tel" placeholder="Phone" id="phone" />
+                    </div>
+
+                    <div class="input_item">
+                        <label for="pwd">Password:</label>
+                        <input type="password" placeholder="Password" id="pwd" />
+                    </div>
+
+                    <div class="input_item">
+                        <label for="pwd2">Password:</label>
+                        <input type="password" placeholder="Confirm Password" id="pwd2" />
+                    </div>
+
+                    <input type="button" value="Register" onclick="registerUser();" />
+
+                    <hr />
+
+                    <p>Already registered? <input type="button" value="Login" onclick="showLogin();" /></p>
+                </form>
+            </div>
+        </div>
+        <div class="container login" id="login">
+            <div class="left"></div>
+            <div class="right">
+                <form action="" class="form">
+                    <h1>Login</h1>
+                    <div class="input_item">
+                        <label for="uid">User:</label>
+                        <input type="text" placeholder="Email or Phone" id="uid" />
+                    </div>
+
+                    <div class="input_item">
+                        <label for="pwd3">Password:</label>
+                        <input type="password" placeholder="Password" id="pwd3" />
+                    </div>
+                    <input type="button" value="Login" onclick="loginUser();" />
+
+                    <hr />
+
+                    <p>Not registered? <input type="button" value="Register" onclick="showRegister();"/></p>
+                </form>
+            </div>
+        </div>
+
+        <div class="container home" id="home">
+            <div class="user_info" id="user_info">
+                <h2>Welcome</h2>
+                <h1>Fullname</h1>
+                <h1>Email</h1>
+                <h1>Phone</h1>
+                <input type="button" value="Cart">
+                <p class="cart_quantity" id="cart_quantity">0</p>
+                <input type="button" value="Logout">
+            </div>
+
+            <div class="search_bar">
+                <div class="box">
+                    <input type="text" placeholder="e.g. Have you seen Zandile" id="search" />
+                    <input type="button" value="Search" />
+                </div>
+                
+            </div>
+
+            <div class="book_shelf" id="book_shelf">
+
+            </div>
+
+            <div class="footer">
+                <p>This app was designed by &copy; Desmond Milani &reg; 2022</p>
+            </div>
+        </div>
+
+        <div class="container cart" id="cart">
+            <h1 style="text-align: center;">My Cart</h1>
+            <div class="cart_content" id="cart_content">
+                <div class="cart_item">
+                    <div class="cart_item_image"></div>
+                    <div class="cart_info">
+                        <h1>Book name</h1>
+                        <h2>Price</h2>
+                        <h3>Quantity</h3>
+                    </div>
+                    <div class="cart_buttons">
+                        <input type="button" value="Decrement" />
+                        <input type="button" value="Increment" />
+                    </div>
+                </div>
+
+                
+            </div>
+            <input type="button" value="Go back" onclick="showHome();">
+        </div>
+
+        <div class="container modal" id="modal">
+            <div class="modal_content" id="modal_content">
+                <img src="Images/Books/agnes.jpg" alt="">
+                <h1>Book_name</h1>
+                <h2>Author</h2>
+                <h3>Price</h3>
+                <h2>ISBN</h2>
+                <p>Description</p>
+                <input type="button" value="Add to cart" />
+            </div>
+            <input type="button" value="Go back Home" onclick="closeModal();" />
+        </div>
+    </div>
+
+    <script src="Scripts/des.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

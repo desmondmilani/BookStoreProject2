@@ -1,0 +1,47 @@
+.modal {
+    background: rgba(0, 0, 0, 0.3);
+    position: absolute;
+    left: 0;
+    top: 0;
+    align-items: center;
+    justify-content: center;
+    display: none;
+}
+
+.modal_content {
+    padding: 25px;
+    border: 2px solid black;
+    text-align: center;
+    border-radius: 20px;
+    background: rgba(0, 0, 0, 0.7);
+    color: antiquewhite;
+    max-width: 500px;
+}
+
+.modal_content h1 {
+    font-size: 1.2em;
+}
+.modal_content h2 {
+    font-size: 0.9em;
+}
+.modal_content h3 {
+    font-size: 1.2em;
+    font-family: algerian;
+}
+.modal_content p {
+    font-size: 1em;
+}
+
+.modal input[type=button] {
+    padding: 15px;
+    font-size: 1.2em;
+    border: 2px solid black;
+    background: black;
+    color: white;
+}
+
+.modal input[type=button]:hover {
+    background: white;
+    color: black;
+    cursor: pointer;
+}

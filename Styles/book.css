@@ -1,0 +1,19 @@
+.book {
+    padding: 20px;
+    border: 2px solid black;
+}
+
+.book:hover {
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.book h1 {
+    font-size: 1.2em;
+    text-align: center;
+}
+
+.book h2 {
+    font-size: 0.6em;
+    text-align: right;
+    margin-bottom: 15px;
+}
